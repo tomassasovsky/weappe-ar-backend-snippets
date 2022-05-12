@@ -2,7 +2,7 @@
     "name": "weappe-ar-backend-snippets",
     "displayName": "WeAppe.ar Backend Snippets",
     "description": "Dart code snippets for programming WeAppe.ar's backend",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icon": "logo.jpg",
     "publisher": "WeAppear",
     "engines": {
@@ -26,6 +26,52 @@
                 "language": "dart",
                 "path": "./snippets/snippets.code-snippets"
             }
-        ]
+        ],
+        "commands": [
+            {
+                "command": "extension.new-endpoint",
+                "title": "WeAppe.ar: New Endpoint",
+                "icon": "logo.jpg"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "extension.new-endpoint",
+                    "group": "newEndpoint@1",
+                    "when": "explorerResourceIsFolder"
+                }
+            ]
+        }
+    },
+    "activationEvents": [
+        "onCommand:extension.new-endpoint",
+        "workspaceContains:**/pubspec.yaml"
+    ],
+    "main": "./dist/extension",
+    "scripts": {
+        "vscode:prepublish": "webpack --mode production",
+        "webpack": "webpack --mode development",
+        "webpack-dev": "webpack --mode development --watch",
+        "test-compile": "tsc -p ./",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/change-case": "^2.3.1",
+        "@types/lodash": "^4.14.121",
+        "@types/mkdirp": "^0.5.2",
+        "@types/node": "^12.7.8",
+        "@types/vscode": "^1.56.0",
+        "ts-loader": "^6.2.1",
+        "tslint": "^5.12.1",
+        "typescript": "^3.5.1",
+        "webpack": "^5.19.0",
+        "webpack-cli": "^4.4.0"
+    },
+    "dependencies": {
+        "change-case": "^3.1.0",
+        "lodash": "^4.17.19",
+        "mkdirp": "^0.5.1"
     }
 }
