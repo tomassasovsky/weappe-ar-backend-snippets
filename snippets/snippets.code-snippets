@@ -1,0 +1,40 @@
+{
+  "WeAppe.ar Controller": {
+    "prefix": "weappear-controller",
+    "body": [
+      "import 'dart:async';",
+      "",
+      "import 'package:alfred/alfred.dart';",
+      "import 'package:backend/backend.dart';",
+      "",
+      "class ${1:name} extends Controller<${1:name}> {",
+      "  @override",
+      "  FutureOr<dynamic> run(HttpRequest req, HttpResponse res) {}",
+      "",
+      "  @override",
+      "  ${1:name} get newInstance => ${1:name}();",
+      "}",
+      "",
+    ],
+    "description": "Creates a new controller"
+  },
+  "WeAppe.ar Middleware": {
+    "prefix": "weappear-middleware",
+    "body": [
+      "import 'dart:async';",
+      "",
+      "import 'package:alfred/alfred.dart';",
+      "import 'package:backend/backend.dart';",
+      "",
+      "class ${1:name} extends Middleware<${1:name}> {",
+      "  @override",
+      "  FutureOr<dynamic> run(HttpRequest req, HttpResponse res) {}",
+      "",
+      "  @override",
+      "  ${1:name} get newInstance => ${1:name}();",
+      "}",
+      "",
+    ],
+    "description": "Creates a new Middleware"
+  }
+}

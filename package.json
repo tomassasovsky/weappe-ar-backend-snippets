@@ -1,0 +1,31 @@
+{
+    "name": "weappe-ar-backend-snippets",
+    "displayName": "WeAppe.ar Backend Snippets",
+    "description": "Dart code snippets for programming WeAppe.ar's backend",
+    "version": "0.0.1",
+    "icon": "logo.jpg",
+    "publisher": "WeAppear",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "homepage": "https://github.com/tomassasovsky/weappe-ar-backend-snippets",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tomassasovsky/weappe-ar-backend-snippets.git"
+    },
+    "keywords": [
+        "Dart",
+        "Snippets"
+    ],
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "dart",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
